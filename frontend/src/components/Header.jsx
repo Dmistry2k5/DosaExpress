@@ -106,7 +106,7 @@ const Header = () => {
                 <span>Call Us</span>
               </a>
               <Link to="/branches" onClick={() => setIsMobileMenuOpen(false)}>
-                <Button className="w-full bg-amber-500 hover:bg-amber-600 text-white">
+                <Button className="w-full bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white font-bold">
                   Order Now
                 </Button>
               </Link>

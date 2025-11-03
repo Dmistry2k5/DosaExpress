@@ -13,7 +13,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="mb-4">
-              <Logo className="h-14" />
+              <Logo className="h-16" />
             </div>
             <p className="text-sm mb-4">
               Authentic South Indian & Sri Lankan vegetarian cuisine in the heart of London.

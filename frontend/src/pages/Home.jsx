@@ -203,25 +203,39 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-amber-500 to-orange-600 text-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Experience Authentic Dosas?</h2>
-          <p className="text-xl mb-8 text-amber-100">
+      <section className="py-28 bg-gradient-to-br from-red-600 via-orange-600 to-yellow-500 text-white relative overflow-hidden">
+        {/* Animated background pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 left-0 w-full h-full" style={{
+            backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)',
+            backgroundSize: '50px 50px'
+          }}></div>
+        </div>
+        
+        <div className="max-w-5xl mx-auto px-4 text-center relative z-10">
+          <h2 className="text-5xl md:text-7xl font-black mb-8 drop-shadow-2xl animate-pulse">
+            Ready to Experience Authentic Dosas?
+          </h2>
+          <p className="text-2xl md:text-3xl mb-12 text-yellow-100 font-semibold drop-shadow-lg">
             Visit us today or order online for delivery to your doorstep
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link to="/branches">
-              <Button size="lg" className="bg-white text-amber-600 hover:bg-gray-100 px-8 py-6 text-lg">
+              <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100 px-12 py-8 text-xl font-black shadow-2xl hover:shadow-3xl transition-all transform hover:scale-110">
                 Find Your Nearest Branch
               </Button>
             </Link>
             <Link to="/menu">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-amber-600 px-8 py-6 text-lg">
+              <Button size="lg" variant="outline" className="border-3 border-white text-white hover:bg-white hover:text-red-600 px-12 py-8 text-xl font-black shadow-2xl backdrop-blur-sm transition-all transform hover:scale-110">
                 Browse Menu
               </Button>
             </Link>
           </div>
         </div>
+
+        {/* Decorative elements */}
+        <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+        <div className="absolute -top-10 -right-10 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
       </section>
     </div>
   );

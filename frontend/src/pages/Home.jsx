@@ -158,24 +158,43 @@ const Home = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-gray-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">What Our Guests Say</h2>
-            <p className="text-xl text-gray-300">Loved by locals since 1999</p>
+      <section className="py-24 bg-gradient-to-br from-gray-900 via-red-900 to-gray-900 text-white relative overflow-hidden">
+        {/* Animated stars background */}
+        <div className="absolute inset-0 opacity-20">
+          {[...Array(20)].map((_, i) => (
+            <div
+              key={i}
+              className="absolute animate-pulse"
+              style={{
+                top: `${Math.random() * 100}%`,
+                left: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 3}s`
+              }}
+            >
+              <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+            </div>
+          ))}
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl md:text-6xl font-black mb-4 text-white drop-shadow-2xl">
+              What Our Guests Say
+            </h2>
+            <p className="text-2xl text-orange-300 font-semibold">Loved by locals since 1999</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {testimonials.map((testimonial) => (
-              <Card key={testimonial.id} className="bg-gray-800 border-gray-700 hover:border-amber-500 transition-colors">
-                <CardContent className="p-6">
-                  <div className="flex mb-3">
+              <Card key={testimonial.id} className="bg-gradient-to-br from-gray-800 to-gray-900 border-2 border-orange-500/30 hover:border-orange-500 transition-all duration-500 shadow-2xl hover:shadow-orange-500/50 transform hover:-translate-y-2">
+                <CardContent className="p-8">
+                  <div className="flex mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-amber-500 text-amber-500" />
+                      <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400 drop-shadow-lg" />
                     ))}
                   </div>
-                  <p className="text-gray-300 text-sm mb-4">"{testimonial.comment}"</p>
-                  <p className="text-amber-500 font-semibold text-sm">- {testimonial.name}</p>
+                  <p className="text-gray-200 text-base mb-6 leading-relaxed italic">"{testimonial.comment}"</p>
+                  <p className="text-orange-400 font-bold text-base">- {testimonial.name}</p>
                 </CardContent>
               </Card>
             ))}

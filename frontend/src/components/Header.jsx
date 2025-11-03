@@ -35,9 +35,11 @@ const Header = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center text-white font-bold text-xl">
-              DE
-            </div>
+            <img 
+              src="https://customer-assets.emergentagent.com/job_south-indian-bites-1/artifacts/3eeq62pn_image.png" 
+              alt="Dosa Express Logo" 
+              className="h-14 w-auto"
+            />
             <div>
               <h1 className="text-xl font-bold text-gray-900">Dosa Express</h1>
               <p className="text-xs text-gray-600">Since 1999</p>

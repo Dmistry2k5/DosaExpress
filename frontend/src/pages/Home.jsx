@@ -7,7 +7,7 @@ import { Badge } from '../components/ui/badge';
 import { menuItems, testimonials } from '../mockData';
 
 const Home = () => {
-  const featuredDosas = menuItems.filter(item => item.category === 'signature').slice(0, 3);
+  const featuredDosas = menuItems.filter(item => item.category === 'popular').slice(0, 3);
 
   return (
     <div className="min-h-screen">

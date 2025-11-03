@@ -96,39 +96,48 @@ const Home = () => {
       </section>
 
       {/* Signature Dosas Section */}
-      <section className="py-20 bg-gradient-to-b from-amber-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Signature Dosas</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+      <section className="py-24 bg-gradient-to-br from-red-50 via-orange-50 to-yellow-50 relative overflow-hidden">
+        {/* Animated background elements */}
+        <div className="absolute top-20 right-20 w-72 h-72 bg-gradient-to-br from-red-300/20 to-orange-300/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 left-20 w-72 h-72 bg-gradient-to-br from-yellow-300/20 to-red-300/20 rounded-full blur-3xl animate-pulse delay-700"></div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl md:text-7xl font-black bg-gradient-to-r from-red-600 via-orange-600 to-yellow-600 bg-clip-text text-transparent mb-6">
+              Our Signature Dosas
+            </h2>
+            <p className="text-2xl text-gray-700 max-w-3xl mx-auto font-medium">
               Handcrafted with authentic recipes passed down through generations
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {featuredDosas.map((dosa) => (
-              <Card key={dosa.id} className="overflow-hidden border-none shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group">
-                <div className="relative h-64 overflow-hidden">
+              <Card key={dosa.id} className="overflow-hidden border-none shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-4 group bg-white">
+                <div className="relative h-72 overflow-hidden">
                   <img
                     src={dosa.image}
                     alt={dosa.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-125 transition-transform duration-700"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent group-hover:from-black/40 transition-colors duration-500"></div>
                   <div className="absolute top-4 right-4">
                     {dosa.vegan && (
-                      <Badge className="bg-green-500 text-white border-none">
-                        <Leaf className="w-3 h-3 mr-1" />
+                      <Badge className="bg-gradient-to-r from-green-500 to-emerald-600 text-white border-none shadow-lg">
+                        <Leaf className="w-4 h-4 mr-1" />
                         Vegan
                       </Badge>
                     )}
                   </div>
                 </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{dosa.name}</h3>
-                  <p className="text-gray-600 text-sm mb-4">{dosa.description}</p>
+                <CardContent className="p-7">
+                  <h3 className="text-2xl font-black text-gray-900 mb-3">{dosa.name}</h3>
+                  <p className="text-gray-600 text-base mb-5 leading-relaxed">{dosa.description}</p>
                   <div className="flex items-center justify-between">
-                    <span className="text-2xl font-bold text-amber-600">£{dosa.price.toFixed(2)}</span>
-                    <Button size="sm" className="bg-amber-500 hover:bg-amber-600 text-white">
+                    <span className="text-3xl font-black bg-gradient-to-r from-red-600 to-orange-600 bg-clip-text text-transparent">
+                      £{dosa.price.toFixed(2)}
+                    </span>
+                    <Button size="sm" className="bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white font-bold px-6 py-5 shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
                       Order Now
                     </Button>
                   </div>
@@ -137,11 +146,11 @@ const Home = () => {
             ))}
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-16">
             <Link to="/menu">
-              <Button size="lg" variant="outline" className="border-amber-500 text-amber-600 hover:bg-amber-50">
+              <Button size="lg" variant="outline" className="border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white font-bold text-lg px-10 py-6 shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
                 View Full Menu
-                <ArrowRight className="ml-2 w-5 h-5" />
+                <ArrowRight className="ml-2 w-6 h-6" />
               </Button>
             </Link>
           </div>

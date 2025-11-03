@@ -12,16 +12,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center space-x-3 mb-4">
-              <img 
-                src="https://customer-assets.emergentagent.com/job_south-indian-bites-1/artifacts/3eeq62pn_image.png" 
-                alt="Dosa Express Logo" 
-                className="h-12 w-auto"
-              />
-              <div>
-                <h3 className="text-white font-bold text-lg">Dosa Express</h3>
-                <p className="text-xs">Since 1999</p>
-              </div>
+            <div className="mb-4">
+              <Logo className="h-14" />
             </div>
             <p className="text-sm mb-4">
               Authentic South Indian & Sri Lankan vegetarian cuisine in the heart of London.

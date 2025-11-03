@@ -50,14 +50,19 @@ export const branches = [
 ];
 
 export const menuCategories = [
-  { id: "all", name: "All Items", icon: "🍽️" },
-  { id: "signature", name: "Signature Dosas", icon: "⭐" },
-  { id: "classic", name: "Classic Dosas", icon: "🥞" },
-  { id: "special", name: "Special Dosas", icon: "🌟" },
-  { id: "starters", name: "Starters", icon: "🥘" },
-  { id: "chaats", name: "Chaats", icon: "🍢" },
-  { id: "rice", name: "Rice & Noodles", icon: "🍚" },
-  { id: "drinks", name: "Drinks", icon: "🥤" }
+  { id: "all", name: "All Items" },
+  { id: "popular", name: "Most Popular" },
+  { id: "dosas", name: "Dosas" },
+  { id: "special-dosas", name: "Special Curry Dosas" },
+  { id: "indo-chinese-dosas", name: "Indo Chinese Dosas" },
+  { id: "kal-dosas", name: "10\" Kal Dosas" },
+  { id: "idlis", name: "Idlis" },
+  { id: "starters", name: "Starters" },
+  { id: "chaats", name: "Chaats" },
+  { id: "noodles-rice", name: "Noodles & Rice" },
+  { id: "biryani", name: "Biryanis" },
+  { id: "parathas", name: "Parathas & Puris" },
+  { id: "uttappam", name: "Uttappam" }
 ];
 
 export const menuItems = [

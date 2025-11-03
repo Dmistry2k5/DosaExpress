@@ -12,9 +12,11 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center text-white font-bold">
-                DE
-              </div>
+              <img 
+                src="https://customer-assets.emergentagent.com/job_south-indian-bites-1/artifacts/3eeq62pn_image.png" 
+                alt="Dosa Express Logo" 
+                className="h-12 w-auto"
+              />
               <div>
                 <h3 className="text-white font-bold text-lg">Dosa Express</h3>
                 <p className="text-xs">Since 1999</p>

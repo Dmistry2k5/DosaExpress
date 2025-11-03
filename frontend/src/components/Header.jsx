@@ -35,16 +35,8 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
-            <img 
-              src="https://customer-assets.emergentagent.com/job_south-indian-bites-1/artifacts/3eeq62pn_image.png" 
-              alt="Dosa Express Logo" 
-              className="h-14 w-auto"
-            />
-            <div>
-              <h1 className="text-xl font-bold text-gray-900">Dosa Express</h1>
-              <p className="text-xs text-gray-600">Since 1999</p>
-            </div>
+          <Link to="/" className="flex items-center">
+            <Logo className=\"h-12\" />
           </Link>
 
           {/* Desktop Navigation */}

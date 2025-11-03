@@ -427,7 +427,7 @@ export const menuItems = [
     category: "parathas",
     vegan: true,
     spicy: false,
-    image: "https://images.unsplash.com/photo-1626074353765-517a681e40be"
+    image: "https://images.unsplash.com/photo-1580064003296-29deb3521370"
   },
   
   // Uttappam

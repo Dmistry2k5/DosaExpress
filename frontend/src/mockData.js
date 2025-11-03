@@ -417,7 +417,7 @@ export const menuItems = [
     category: "parathas",
     vegan: true,
     spicy: true,
-    image: "https://images.unsplash.com/photo-1626074353765-517a681e40be"
+    image: "https://images.pexels.com/photos/4149256/pexels-photo-4149256.jpeg"
   },
   {
     id: 101,

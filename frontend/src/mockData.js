@@ -75,7 +75,7 @@ export const menuItems = [
     category: "popular",
     vegan: true,
     spicy: false,
-    image: "https://images.unsplash.com/photo-1626074353765-517a681e40be",
+    image: "https://images.unsplash.com/photo-1730191843435-073792ba22bc",
     rating: "78% liked"
   },
   {
@@ -86,7 +86,7 @@ export const menuItems = [
     category: "popular",
     vegan: true,
     spicy: false,
-    image: "https://images.unsplash.com/photo-1630383249896-424e482df921",
+    image: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc",
     rating: "Popular"
   },
   {
@@ -139,7 +139,7 @@ export const menuItems = [
     category: "dosas",
     vegan: false,
     spicy: false,
-    image: "https://images.unsplash.com/photo-1743517894265-c86ab035adef"
+    image: "https://images.pexels.com/photos/941869/pexels-photo-941869.jpeg"
   },
   {
     id: 14,
@@ -149,7 +149,7 @@ export const menuItems = [
     category: "dosas",
     vegan: false,
     spicy: false,
-    image: "https://images.unsplash.com/photo-1694849789325-914b71ab4075"
+    image: "https://images.pexels.com/photos/5560763/pexels-photo-5560763.jpeg"
   },
   {
     id: 15,
@@ -159,7 +159,7 @@ export const menuItems = [
     category: "dosas",
     vegan: false,
     spicy: false,
-    image: "https://images.unsplash.com/photo-1708146464361-5c5ce4f9abb6"
+    image: "https://images.unsplash.com/photo-1694849789325-914b71ab4075"
   },
   
   // Special Curry Dosas
@@ -193,7 +193,7 @@ export const menuItems = [
     category: "indo-chinese-dosas",
     vegan: true,
     spicy: true,
-    image: "https://images.unsplash.com/photo-1694849789325-914b71ab4075"
+    image: "https://images.pexels.com/photos/941869/pexels-photo-941869.jpeg"
   },
   {
     id: 31,
@@ -203,7 +203,7 @@ export const menuItems = [
     category: "indo-chinese-dosas",
     vegan: true,
     spicy: true,
-    image: "https://images.unsplash.com/photo-1743517894265-c86ab035adef"
+    image: "https://images.pexels.com/photos/5560763/pexels-photo-5560763.jpeg"
   },
   {
     id: 32,
@@ -247,7 +247,7 @@ export const menuItems = [
     category: "idlis",
     vegan: true,
     spicy: false,
-    image: "https://images.unsplash.com/photo-1630383249896-424e482df921"
+    image: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc"
   },
   {
     id: 51,
@@ -257,7 +257,17 @@ export const menuItems = [
     category: "idlis",
     vegan: false,
     spicy: true,
-    image: "https://images.unsplash.com/photo-1630383249896-424e482df921"
+    image: "https://images.unsplash.com/photo-1632104667384-06f58cb7ad44"
+  },
+  {
+    id: 52,
+    name: "Sambar Idly",
+    description: "Idlis served with hot sambhar",
+    price: 5.00,
+    category: "idlis",
+    vegan: true,
+    spicy: false,
+    image: "https://images.pexels.com/photos/14831540/pexels-photo-14831540.jpeg"
   },
   
   // Starters
@@ -269,7 +279,7 @@ export const menuItems = [
     category: "starters",
     vegan: true,
     spicy: false,
-    image: "https://images.pexels.com/photos/12392915/pexels-photo-12392915.jpeg"
+    image: "https://images.unsplash.com/photo-1601050690597-df0568f70950"
   },
   {
     id: 61,
@@ -279,7 +289,7 @@ export const menuItems = [
     category: "starters",
     vegan: true,
     spicy: false,
-    image: "https://images.pexels.com/photos/12392915/pexels-photo-12392915.jpeg"
+    image: "https://images.pexels.com/photos/4449068/pexels-photo-4449068.jpeg"
   },
   {
     id: 62,
@@ -289,7 +299,7 @@ export const menuItems = [
     category: "starters",
     vegan: true,
     spicy: true,
-    image: "https://images.unsplash.com/photo-1626074353765-517a681e40be"
+    image: "https://images.unsplash.com/photo-1668236543090-82eba5ee5976"
   },
   {
     id: 63,
@@ -299,7 +309,7 @@ export const menuItems = [
     category: "starters",
     vegan: true,
     spicy: false,
-    image: "https://images.unsplash.com/photo-1626074353765-517a681e40be"
+    image: "https://images.unsplash.com/photo-1683533678059-63c6a0e9e3ef"
   },
   {
     id: 64,
@@ -309,7 +319,7 @@ export const menuItems = [
     category: "starters",
     vegan: true,
     spicy: false,
-    image: "https://images.unsplash.com/photo-1626074353765-517a681e40be"
+    image: "https://images.unsplash.com/photo-1683533678033-f5d60f0a3437"
   },
   
   // Chaats
@@ -331,7 +341,7 @@ export const menuItems = [
     category: "chaats",
     vegan: true,
     spicy: true,
-    image: "https://images.unsplash.com/photo-1606491956689-2ea866880c84"
+    image: "https://images.unsplash.com/photo-1626074353765-517a681e40be"
   },
   {
     id: 72,
@@ -385,7 +395,7 @@ export const menuItems = [
     category: "biryani",
     vegan: true,
     spicy: false,
-    image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8"
+    image: "https://images.unsplash.com/photo-1701579231305-d84d8af9a3fd"
   },
   {
     id: 91,
@@ -395,7 +405,7 @@ export const menuItems = [
     category: "biryani",
     vegan: false,
     spicy: false,
-    image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8"
+    image: "https://images.pexels.com/photos/2092916/pexels-photo-2092916.jpeg"
   },
   
   // Parathas & Puris
@@ -429,7 +439,7 @@ export const menuItems = [
     category: "uttappam",
     vegan: true,
     spicy: false,
-    image: "https://images.unsplash.com/photo-1630383249896-424e482df921"
+    image: "https://images.unsplash.com/photo-1632104667384-06f58cb7ad44"
   },
   {
     id: 111,
@@ -439,7 +449,7 @@ export const menuItems = [
     category: "uttappam",
     vegan: true,
     spicy: false,
-    image: "https://images.unsplash.com/photo-1630383249896-424e482df921"
+    image: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc"
   },
   {
     id: 112,
@@ -449,7 +459,7 @@ export const menuItems = [
     category: "uttappam",
     vegan: true,
     spicy: false,
-    image: "https://images.unsplash.com/photo-1630383249896-424e482df921"
+    image: "https://images.pexels.com/photos/14831540/pexels-photo-14831540.jpeg"
   }
 ];
 

@@ -63,12 +63,12 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <a href="tel:+447505920566" className="flex items-center space-x-2 text-sm text-gray-700 hover:text-amber-600 transition-colors">
+            <a href="tel:+447505920566" className="flex items-center space-x-2 text-sm text-gray-700 hover:text-red-600 transition-colors font-medium">
               <Phone className="w-4 h-4" />
               <span>Call Us</span>
             </a>
             <Link to="/branches">
-              <Button className="bg-amber-500 hover:bg-amber-600 text-white">
+              <Button className="bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white font-bold shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
                 Order Now
               </Button>
             </Link>

@@ -341,7 +341,7 @@ export const menuItems = [
     category: "chaats",
     vegan: true,
     spicy: true,
-    image: "https://images.unsplash.com/photo-1626074353765-517a681e40be"
+    image: "https://images.unsplash.com/photo-1653850280260-aa3b9e00b230"
   },
   {
     id: 72,

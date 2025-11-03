@@ -66,125 +66,390 @@ export const menuCategories = [
 ];
 
 export const menuItems = [
+  // Popular Items
   {
     id: 1,
-    name: "Mysore Masala Dosa",
-    description: "Crispy dosa with spicy red chutney spread, filled with potato masala",
-    price: 8.50,
-    category: "signature",
+    name: "Medhu Vada",
+    description: "2 pieces with sambhar and chutney",
+    price: 4.70,
+    category: "popular",
     vegan: true,
-    spicy: true,
-    image: "https://images.unsplash.com/photo-1668236543090-82eba5ee5976"
+    spicy: false,
+    image: "https://images.unsplash.com/photo-1626074353765-517a681e40be",
+    rating: "78% liked"
   },
   {
     id: 2,
-    name: "Indo-Chinese Cheese Dosa",
-    description: "Fusion dosa with Chinese vegetables, cheese and special sauces",
-    price: 9.50,
-    category: "signature",
-    vegan: false,
+    name: "Idly",
+    description: "2 pieces soft steamed rice cakes with sambhar and chutney",
+    price: 4.50,
+    category: "popular",
+    vegan: true,
+    spicy: false,
+    image: "https://images.unsplash.com/photo-1630383249896-424e482df921",
+    rating: "Popular"
+  },
+  {
+    id: 3,
+    name: "Masala Dosa",
+    description: "Classic crispy dosa filled with spiced potato masala",
+    price: 7.50,
+    category: "popular",
+    vegan: true,
+    spicy: false,
+    image: "https://images.unsplash.com/photo-1668236543090-82eba5ee5976"
+  },
+  
+  // Classic Dosas
+  {
+    id: 10,
+    name: "Plain Dosa",
+    description: "Classic crispy golden dosa",
+    price: 5.99,
+    category: "dosas",
+    vegan: true,
     spicy: false,
     image: "https://images.unsplash.com/photo-1694849789325-914b71ab4075"
   },
   {
-    id: 3,
-    name: "Kal Dosa 10\"",
-    description: "Thick, soft fermented dosa served with coconut chutney",
-    price: 7.00,
-    category: "signature",
-    vegan: true,
-    spicy: false,
-    image: "https://images.unsplash.com/photo-1708146464361-5c5ce4f9abb6"
-  },
-  {
-    id: 4,
-    name: "Plain Dosa",
-    description: "Classic crispy golden dosa served with sambar and chutneys",
-    price: 6.00,
-    category: "classic",
-    vegan: true,
-    spicy: false,
-    image: "https://images.unsplash.com/photo-1743517894265-c86ab035adef"
-  },
-  {
-    id: 5,
+    id: 11,
     name: "Masala Dosa",
-    description: "Traditional dosa filled with spiced potato filling",
+    description: "Traditional dosa filled with spiced potato masala",
     price: 7.50,
-    category: "classic",
+    category: "dosas",
     vegan: true,
     spicy: false,
     image: "https://images.unsplash.com/photo-1668236543090-82eba5ee5976"
   },
   {
-    id: 6,
+    id: 12,
+    name: "Mysore Masala Dosa",
+    description: "Crispy dosa with spicy red chutney spread, filled with potato masala",
+    price: 8.00,
+    category: "dosas",
+    vegan: true,
+    spicy: true,
+    image: "https://images.unsplash.com/photo-1708146464361-5c5ce4f9abb6"
+  },
+  {
+    id: 13,
+    name: "Ghee Roast Dosa",
+    description: "Crispy dosa roasted with pure ghee for rich flavor",
+    price: 7.95,
+    category: "dosas",
+    vegan: false,
+    spicy: false,
+    image: "https://images.unsplash.com/photo-1743517894265-c86ab035adef"
+  },
+  {
+    id: 14,
     name: "Cheese Dosa",
     description: "Crispy dosa topped with melted cheese",
-    price: 8.00,
-    category: "classic",
+    price: 7.99,
+    category: "dosas",
     vegan: false,
     spicy: false,
     image: "https://images.unsplash.com/photo-1694849789325-914b71ab4075"
   },
   {
-    id: 7,
-    name: "Paneer Tikka Dosa",
-    description: "Dosa filled with marinated paneer tikka and mint chutney",
-    price: 9.00,
-    category: "special",
+    id: 15,
+    name: "Paneer Dosa",
+    description: "Dosa filled with spiced cottage cheese",
+    price: 8.50,
+    category: "dosas",
     vegan: false,
-    spicy: true,
+    spicy: false,
     image: "https://images.unsplash.com/photo-1708146464361-5c5ce4f9abb6"
   },
+  
+  // Special Curry Dosas
   {
-    id: 8,
+    id: 20,
+    name: "Chola Dosa",
+    description: "Dosa served with spicy chickpea curry",
+    price: 8.50,
+    category: "special-dosas",
+    vegan: true,
+    spicy: true,
+    image: "https://images.unsplash.com/photo-1668236543090-82eba5ee5976"
+  },
+  {
+    id: 21,
+    name: "Paneer Butter Masala Dosa",
+    description: "Dosa with creamy paneer butter masala curry",
+    price: 9.50,
+    category: "special-dosas",
+    vegan: false,
+    spicy: false,
+    image: "https://images.unsplash.com/photo-1708146464361-5c5ce4f9abb6"
+  },
+  
+  // Indo Chinese Dosas
+  {
+    id: 30,
     name: "Schezwan Dosa",
     description: "Spicy Indo-Chinese fusion dosa with Schezwan sauce",
     price: 8.50,
-    category: "special",
+    category: "indo-chinese-dosas",
+    vegan: true,
+    spicy: true,
+    image: "https://images.unsplash.com/photo-1694849789325-914b71ab4075"
+  },
+  {
+    id: 31,
+    name: "Manchurian Dosa",
+    description: "Dosa with vegetable Manchurian filling",
+    price: 8.95,
+    category: "indo-chinese-dosas",
     vegan: true,
     spicy: true,
     image: "https://images.unsplash.com/photo-1743517894265-c86ab035adef"
   },
   {
-    id: 9,
+    id: 32,
+    name: "Hakka Noodles Dosa",
+    description: "Unique fusion with Hakka noodles inside crispy dosa",
+    price: 9.50,
+    category: "indo-chinese-dosas",
+    vegan: true,
+    spicy: false,
+    image: "https://images.unsplash.com/photo-1668236543090-82eba5ee5976"
+  },
+  
+  // 10" Kal Dosas
+  {
+    id: 40,
+    name: "Plain Kal Dosa 10\"",
+    description: "Thick, soft fermented dosa served with coconut chutney",
+    price: 6.50,
+    category: "kal-dosas",
+    vegan: true,
+    spicy: false,
+    image: "https://images.unsplash.com/photo-1708146464361-5c5ce4f9abb6"
+  },
+  {
+    id: 41,
+    name: "Onion Kal Dosa 10\"",
+    description: "Thick dosa topped with onions and spices",
+    price: 7.50,
+    category: "kal-dosas",
+    vegan: true,
+    spicy: false,
+    image: "https://images.unsplash.com/photo-1694849789325-914b71ab4075"
+  },
+  
+  // Idlis
+  {
+    id: 50,
+    name: "Idly (2 Pieces)",
+    description: "Soft steamed rice cakes with sambhar and chutney",
+    price: 4.50,
+    category: "idlis",
+    vegan: true,
+    spicy: false,
+    image: "https://images.unsplash.com/photo-1630383249896-424e482df921"
+  },
+  {
+    id: 51,
+    name: "Ghee Podi Idly",
+    description: "Idlis tossed in ghee with spiced lentil powder",
+    price: 5.50,
+    category: "idlis",
+    vegan: false,
+    spicy: true,
+    image: "https://images.unsplash.com/photo-1630383249896-424e482df921"
+  },
+  
+  // Starters
+  {
+    id: 60,
     name: "Samosa",
-    description: "Crispy pastry filled with spiced potatoes and peas",
-    price: 3.50,
+    description: "2 pieces crispy pastry filled with spiced potatoes",
+    price: 3.95,
     category: "starters",
     vegan: true,
     spicy: false,
     image: "https://images.pexels.com/photos/12392915/pexels-photo-12392915.jpeg"
   },
   {
-    id: 10,
+    id: 61,
+    name: "Punjabi Samosa",
+    description: "2 pieces with chutney",
+    price: 3.95,
+    category: "starters",
+    vegan: true,
+    spicy: false,
+    image: "https://images.pexels.com/photos/12392915/pexels-photo-12392915.jpeg"
+  },
+  {
+    id: 62,
+    name: "Pav Bhaji",
+    description: "Spicy street food favourite made with mixed vegetables",
+    price: 6.40,
+    category: "starters",
+    vegan: true,
+    spicy: true,
+    image: "https://images.unsplash.com/photo-1626074353765-517a681e40be"
+  },
+  {
+    id: 63,
+    name: "Moong Dal Vada",
+    description: "3 pieces with chutney",
+    price: 3.95,
+    category: "starters",
+    vegan: true,
+    spicy: false,
+    image: "https://images.unsplash.com/photo-1626074353765-517a681e40be"
+  },
+  {
+    id: 64,
+    name: "Sambar Vada",
+    description: "4 pieces vada dipped in sambhar",
+    price: 6.00,
+    category: "starters",
+    vegan: true,
+    spicy: false,
+    image: "https://images.unsplash.com/photo-1626074353765-517a681e40be"
+  },
+  
+  // Chaats
+  {
+    id: 70,
     name: "Pani Puri",
     description: "Crispy shells filled with spiced water, tamarind and potato",
-    price: 5.00,
+    price: 5.50,
     category: "chaats",
     vegan: true,
     spicy: true,
-    image: "https://images.unsplash.com/photo-1668236543090-82eba5ee5976"
+    image: "https://images.unsplash.com/photo-1606491956689-2ea866880c84"
   },
   {
-    id: 11,
+    id: 71,
+    name: "Bhel Puri",
+    description: "Puffed rice mixed with vegetables and tangy chutneys",
+    price: 5.50,
+    category: "chaats",
+    vegan: true,
+    spicy: true,
+    image: "https://images.unsplash.com/photo-1606491956689-2ea866880c84"
+  },
+  {
+    id: 72,
+    name: "Sev Puri",
+    description: "Crispy puris topped with potatoes, chutneys and sev",
+    price: 5.95,
+    category: "chaats",
+    vegan: true,
+    spicy: true,
+    image: "https://images.unsplash.com/photo-1606491956689-2ea866880c84"
+  },
+  
+  // Noodles & Rice
+  {
+    id: 80,
+    name: "Vegetable Hakka Noodles",
+    description: "Stir-fried noodles with vegetables and soy sauce",
+    price: 7.50,
+    category: "noodles-rice",
+    vegan: true,
+    spicy: false,
+    image: "https://images.unsplash.com/photo-1585032226651-759b368d7246"
+  },
+  {
+    id: 81,
+    name: "Schezwan Noodles",
+    description: "Spicy noodles with vegetables in Schezwan sauce",
+    price: 7.95,
+    category: "noodles-rice",
+    vegan: true,
+    spicy: true,
+    image: "https://images.unsplash.com/photo-1585032226651-759b368d7246"
+  },
+  {
+    id: 82,
+    name: "Vegetable Fried Rice",
+    description: "Aromatic fried rice with mixed vegetables",
+    price: 7.50,
+    category: "noodles-rice",
+    vegan: true,
+    spicy: false,
+    image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b"
+  },
+  
+  // Biryani
+  {
+    id: 90,
     name: "Vegetable Biryani",
     description: "Aromatic basmati rice with mixed vegetables and spices",
     price: 8.50,
-    category: "rice",
+    category: "biryani",
     vegan: true,
     spicy: false,
-    image: "https://images.unsplash.com/photo-1694849789325-914b71ab4075"
+    image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8"
   },
   {
-    id: 12,
-    name: "Mango Lassi",
-    description: "Refreshing yogurt drink blended with sweet mangoes",
-    price: 3.50,
-    category: "drinks",
+    id: 91,
+    name: "Paneer Biryani",
+    description: "Fragrant rice with marinated paneer and whole spices",
+    price: 9.50,
+    category: "biryani",
     vegan: false,
     spicy: false,
-    image: "https://images.unsplash.com/photo-1708146464361-5c5ce4f9abb6"
+    image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8"
+  },
+  
+  // Parathas & Puris
+  {
+    id: 100,
+    name: "Chola Puri",
+    description: "Fluffy puris served with spicy chickpea curry",
+    price: 7.50,
+    category: "parathas",
+    vegan: true,
+    spicy: true,
+    image: "https://images.unsplash.com/photo-1626074353765-517a681e40be"
+  },
+  {
+    id: 101,
+    name: "Aloo Paratha",
+    description: "Stuffed flatbread with spiced potato filling",
+    price: 6.50,
+    category: "parathas",
+    vegan: true,
+    spicy: false,
+    image: "https://images.unsplash.com/photo-1626074353765-517a681e40be"
+  },
+  
+  // Uttappam
+  {
+    id: 110,
+    name: "Plain Uttappam",
+    description: "Thick South Indian pancake",
+    price: 6.50,
+    category: "uttappam",
+    vegan: true,
+    spicy: false,
+    image: "https://images.unsplash.com/photo-1630383249896-424e482df921"
+  },
+  {
+    id: 111,
+    name: "Onion Uttappam",
+    description: "Thick pancake topped with onions",
+    price: 7.50,
+    category: "uttappam",
+    vegan: true,
+    spicy: false,
+    image: "https://images.unsplash.com/photo-1630383249896-424e482df921"
+  },
+  {
+    id: 112,
+    name: "Mixed Vegetable Uttappam",
+    description: "Thick pancake topped with mixed vegetables",
+    price: 8.50,
+    category: "uttappam",
+    vegan: true,
+    spicy: false,
+    image: "https://images.unsplash.com/photo-1630383249896-424e482df921"
   }
 ];
 

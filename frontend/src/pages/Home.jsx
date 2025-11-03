@@ -24,40 +24,44 @@ const Home = () => {
           >
             <source src="https://player.vimeo.com/external/434045526.sd.mp4?s=c27eecc69a27dbc4ff2b87d38afc35f1a9e7c02d&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
+          {/* Animated gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-red-600/20 via-transparent to-orange-600/20 animate-pulse"></div>
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <Badge className="mb-6 bg-amber-500/90 text-white border-none px-4 py-1.5 text-sm">
-            Since 1999 • Authentic Vegetarian Cuisine
+        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
+          <Badge className="mb-6 bg-gradient-to-r from-red-500 to-orange-500 text-white border-none px-6 py-2 text-base font-semibold shadow-2xl hover:shadow-red-500/50 transition-all animate-bounce">
+            ✨ Since 1999 • Authentic Vegetarian Cuisine
           </Badge>
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-6xl md:text-8xl font-black text-white mb-6 leading-tight drop-shadow-2xl">
             Experience The Art of
-            <span className="block text-amber-400 mt-2">South Indian Dosas</span>
+            <span className="block bg-gradient-to-r from-yellow-300 via-orange-400 to-red-500 bg-clip-text text-transparent mt-3 animate-pulse">
+              South Indian Dosas
+            </span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto">
+          <p className="text-2xl md:text-3xl text-gray-100 mb-10 max-w-3xl mx-auto font-medium drop-shadow-lg">
             Authentic South Indian & Sri Lankan vegetarian cuisine crafted with passion in the heart of London
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-5 justify-center">
             <Link to="/menu">
-              <Button size="lg" className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-6 text-lg group">
+              <Button size="lg" className="bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white px-10 py-7 text-xl font-bold shadow-2xl hover:shadow-orange-500/50 transition-all transform hover:scale-105 group">
                 Explore Menu
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="ml-2 w-6 h-6 group-hover:translate-x-2 transition-transform" />
               </Button>
             </Link>
             <Link to="/branches">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-6 text-lg">
+              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-red-600 px-10 py-7 text-xl font-bold shadow-2xl backdrop-blur-sm bg-white/10 transition-all transform hover:scale-105">
                 Order Online
               </Button>
             </Link>
           </div>
         </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-2">
-            <div className="w-1.5 h-3 bg-white/50 rounded-full"></div>
+        {/* Animated scroll indicator */}
+        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="w-8 h-12 border-3 border-white/70 rounded-full flex items-start justify-center p-2">
+            <div className="w-2 h-4 bg-white/70 rounded-full animate-pulse"></div>
           </div>
         </div>
       </section>
